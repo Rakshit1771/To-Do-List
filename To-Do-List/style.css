@@ -1,0 +1,103 @@
+body {
+  background-color: #242424;
+  margin: 0;
+  padding: 0;
+}
+.main {
+  font-size: xx-large;
+  /* color: white; */
+  background-color: #faecae;
+  width: 40vw;
+  height: 100vh;
+  margin-left: 350px;
+  border-radius: 40px;
+  /* text-align: center; */
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  /* font-family:Tagesschrift ; */
+}
+
+.head {
+  text-align: center;
+  margin-top: 4px;
+  padding-top: 0%;
+  font-family:Tagesschrift
+}
+#text{
+  width: 450px;
+  height: 60px;
+  font-size: xx-large;
+  background-color: rgb(180, 239, 150);
+  border-radius: 20px;
+  padding: 4px;
+  /* display: flex; */
+  font-family: Comic;
+  display: inline;
+}
+.button{
+  display: inline;
+  width:140px;
+  height: 60px;
+  border-radius: 40px;
+  font-size: xx-large;
+  font-family: Comic;
+}
+.items{
+  /* background-color: aquamarine; */
+  width: 570px;
+  height: 500px;
+  margin-top: 20px;
+  margin-left: 40px;
+  overflow-y: auto;
+}
+.task{
+  background-color: rgb(213, 242, 242);
+  font-size: 30px;
+  height: 50px;
+  font-family:Tagesschrift;
+  border: solid black;
+  border-radius: 20px;
+  padding: 3px;
+  margin-top: 10px;
+  margin-left: 0px;
+  margin-right: 120px;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: transform 1s ease, opacity 0.5s ease;
+}
+
+
+.task.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+/* .remove{
+  width: 80px;
+  height: 40px;
+ margin-left: 90px;
+ position: fixed;
+} */
+.deldiv {
+  float: right;
+  background-color: transparent;
+  border: none;
+  font-size: 22px;
+  color: crimson;
+  cursor: pointer;
+  margin-right: 15px;
+  margin-top: 4px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.deldiv::before {
+  content: "Delete"; 
+}
+
+.deldiv:hover {
+  color: darkred;
+  transform: scale(1.2);
+}
+
+ 
